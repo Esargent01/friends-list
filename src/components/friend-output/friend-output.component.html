@@ -1,0 +1,36 @@
+<ng-container *ngIf="(friendListData$ | async) as friendsList">
+    <table mat-table [dataSource]="friendsList" class="mat-elevation-z8" class="friend-form-output">
+        <ng-container matColumnDef="name">
+          <th mat-header-cell *matHeaderCellDef> Name </th>
+          <td mat-cell *matCellDef="let friend"> {{friend.name}} </td>
+        </ng-container>
+      
+        <ng-container matColumnDef="friends">
+          <th mat-header-cell *matHeaderCellDef> Friends </th>
+          <td mat-cell *matCellDef="let friend"> {{friend.friends.length}} </td>
+        </ng-container>
+      
+        <ng-container matColumnDef="weight">
+          <th mat-header-cell *matHeaderCellDef> Weight </th>
+          <td mat-cell *matCellDef="let friend"> 
+            {{friend.weight}}
+            <!--These are the controls for the added functionality of Editing and Deleting-->
+            <!--span class="button-container">
+              <mat-icon (click)="openDialog(friend)" aria-label="Edit Friend" class="edit-icon">edit</mat-icon> 
+              <mat-icon (click)="deleteFriend(friend.id)" aria-label="Delete Friend" class="delete-icon">delete</mat-icon> 
+            </span-->
+          </td>
+        </ng-container>
+      
+        <ng-container matColumnDef="age">
+          <th mat-header-cell *matHeaderCellDef> Age </th>
+          <td mat-cell *matCellDef="let friend"> {{friend.age}} </td>
+        </ng-container>
+      
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+    <div *ngIf="friendsList.length > 4" class="result-count">
+      Results ({{friendsList.length}})
+    </div>
+</ng-container>

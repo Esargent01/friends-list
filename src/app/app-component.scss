@@ -1,0 +1,13 @@
+.app-container{
+    display: flex;
+    flex-flow: column;
+    fl-friend-output{
+        flex: 1;
+        max-height: 250px;
+        overflow: scroll;
+    }
+    fl-friend-list-display{
+        flex: 1;
+        text-align: center;
+    }
+}

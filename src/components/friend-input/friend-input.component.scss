@@ -1,0 +1,30 @@
+.friend-form-container{
+    .friend-form-input{
+        .form-title{
+            font-size: 18px;
+            text-align: center;
+            text-transform: capitalize;
+            margin-bottom: 20px;
+        }
+        .friend-form{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            .form-field{
+                input::-webkit-outer-spin-button,
+                input::-webkit-inner-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+                }
+        
+                input[type=number] {
+                -moz-appearance: textfield;
+                }
+                
+            }
+            button{
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

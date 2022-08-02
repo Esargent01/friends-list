@@ -1,0 +1,24 @@
+:host{
+    position: relative;
+    .friend-form-output{
+        width: 100%;
+        .delete-icon, .edit-icon{
+            position: absolute;
+            cursor: pointer;
+        }
+        .delete-icon{
+            right: 30px;
+        }
+        .edit-icon{
+            right: 70px;
+        }
+    }
+    
+    .result-count{
+        position: absolute;
+        top: 18px;
+        right: 30px;
+        color: #757575;
+        font-size: 12px;
+    }
+}

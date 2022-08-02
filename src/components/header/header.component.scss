@@ -1,0 +1,19 @@
+.header {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    background-color: #0879e4;
+    color: white;
+    font-weight: 600;
+    position: relative;
+
+    .banner-message{
+        padding: 0 15px; 
+        font-size: 18px;
+    }
+
+    .header-menu-button{
+        position: absolute;
+        right: 2%;
+    }
+  } 
