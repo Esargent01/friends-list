@@ -25,3 +25,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Mock GraphQL Database
+
+This project also uses a Mock graphQL backend using Apollo Angular. The mock data already exists in the project. The database can be accessed by running `npm run graphql-run` and having that session active at the same time as the Angular app.
